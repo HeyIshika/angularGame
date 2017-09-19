@@ -1,0 +1,112 @@
+<app-timer></app-timer>
+<br/>
+
+
+<div class="container">
+    
+    
+    <div class="row">
+       <div class="col-2"></div>
+       <div class="col-3">
+         <div class="rightCol1" [style.background-color]="this.hackathon.colors[0]" (click)="onClick(this.hackathon.colors[0]);hackathon.shuffle(this.hackathon.colors);"></div>
+       </div>
+       <div class="col-2"></div>
+       <div class="col-3">
+         <div class="rightCol2"  [style.background-color]="this.hackathon.colors[1]" (click)="onClick(this.hackathon.colors[1]);hackathon.shuffle(this.hackathon.colors);"></div>
+       </div>
+    </div>
+    <br/><br/>
+    <div class="row">
+       <div class="col-2"></div>
+       <div class="col-3">
+         <div class="rightCol1"  [style.background-color]="this.hackathon.colors[2]" (click)="onClick(this.hackathon.colors[2]);hackathon.shuffle(this.hackathon.colors);"></div>
+       </div>
+       <div class="col-2"></div>
+       <div class="col-3">
+         <div class="rightCol2"  [style.background-color]="this.hackathon.colors[3]" (click)="onClick(this.hackathon.colors[3]);hackathon.shuffle(this.hackathon.colors);"></div>
+       </div>
+       
+    </div>
+
+
+
+
+    
+
+    {{this.score}}
+</div>
+
+<div class="container">
+
+    <a href="#ModalForm" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Submit Score</a>
+    
+    <div class="modal fade" id="ModalForm">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button class="close" data-dismiss="modal">&times;</button>
+    
+             <h4 class="modal-title"> Registration Window</h4>
+           </div><!--end modal-header-->
+           
+           <div class="modal-body">
+    
+             <hr>
+    
+    
+               <form id="ModalForm" class="form-horizontal" method="post" name="ContactForm" onsubmit="return ValidateContactForm()" role="form">
+    
+                       <div class="form-group">
+                           <label for="inputName">Name</label>
+                           <input type="text" class="form-control" id="inputName" placeholder="Name" >
+                       </div><!--end of name-->
+                 
+    
+                       <div class="form-group">
+                           <label for="inputEmail" >Email</label>
+                           <input type="email" class="form-control" id="inputEmail" placeholder="name@domain.com">
+                       </div><!--end of mail tab-->
+    
+                       <div class="form-group">
+                           <label for="inputNumber" class="control-label">ID*</label>
+                           <input type="text"  maxlength="9" class="form-control" id="inputNumber" placeholder="Id"  >
+                       </div> <!--end of id form-->
+    
+                       <div class="dropdown">
+                         <label class="control-label">Select Location</label>
+                          <select type="A" class="btn btn-default btn-block dropdown-toggle">
+                                 <option>City1</option>
+                                 <option>City2</option>
+                                 <option>City3</option>
+                          </select>
+                       </div><!--end of city dropdown-->
+                   
+    
+               
+                       <div class="form-group">
+                           <label for="scoreNumber" class="control-label">Points</label>
+                           <input disabled  value="{{this.score}}" type="number" class="form-control" id="scoreNumber">
+                       </div><!--end of score tab-->
+    
+                       
+                       <div class="form-group">
+                         <button type="submit" class="btn btn-info">Submit</button>
+                       </div><!--end of submit-->
+    
+               </form><!--end of ValidateContactForm-->
+    
+           </div><!--end modal-body-->
+         </div><!--end modal-content-->
+       </div><!--end modal-dialog-->
+         
+     </div><!--end Modal-->
+
+</div>
+
+
+
+
+  
+
+
+

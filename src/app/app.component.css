@@ -1,0 +1,14 @@
+.nav{
+    margin: auto
+}
+
+h1{
+    margin-left: 40%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-left: 50%;
+}

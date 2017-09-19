@@ -1,0 +1,53 @@
+.navbar{
+    margin-bottom: 30px;
+  }
+  
+  footer, footer .container{
+    background-color:#232323;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0px;
+  }
+  form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+  }
+  footer a:hover{
+  
+          text-decoration: none;
+       }
+  .column_test{
+      position: relative;
+      clear: both;
+      top: 100px;
+      font-weight: 500;
+  }
+  body{
+      text-align: center;
+  }
+  
+  .leftCol {
+      float: left;
+      width: 50%;
+      height: 300px;
+  }
+  
+  .rightCol {
+      position: relative;
+      float: left;
+      width: 50%;
+  }
+  
+  .rightCol1{
+      height: 150px;
+  }
+  .rightCol2 {
+      height: 150px;
+  }
+  
+  .col-3{
+      margin: 0px;
+      padding: 10px 0px;
+  }
+  
